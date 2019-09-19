@@ -15,11 +15,11 @@ public class Stack <T> {
   }
 
   // A method returning the size of the stack 
-  int getSize() {
+  public int getSize() {
     return size;
   }
 
-  void resize() {
+  public void resize() {
     if(size < Arr.length)
       return;
 
@@ -31,8 +31,8 @@ public class Stack <T> {
     Arr = newArr;
   }
 
-  // A method push that adds an element to the top
-  void push(T element) {
+  // Adds an element to the top of the stack
+  public void push(T element) {
     if(Arr.length == size)
       resize();
 
@@ -40,8 +40,8 @@ public class Stack <T> {
     size++;
   }
 
-  // A method pop that removes the top and returns it
-  T pop() {
+  // Removes the top and returns it
+  public T pop() {
     if(isEmpty())
       return null;
 
@@ -49,24 +49,24 @@ public class Stack <T> {
     return Arr[size];
   }
 
-  // A method peak that returns the top without removing it
-  T peak() {
+  // Returns the top without removing it
+  public T peak() {
     if(isEmpty())
       return null;
 
     return Arr[size-1];
   }
 
-  // A method that returns whether the Array is empty of not
-  boolean isEmpty() {
+  // Returns whether the Array is empty of not
+  public boolean isEmpty() {
     if(size == 0) 
       return true;
 
     return false;
   }
 
-  // A method to display the stack
-  void displayStack() {
+  // Displays the stack
+  public void displayStack() {
     String str = "{";
     if(isEmpty()) {
       System.out.println("{}");
