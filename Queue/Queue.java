@@ -29,7 +29,6 @@ public class Queue <T>{
   public void add(T element) {
     if(size == Arr.length) 
       resize();
-
     Arr[size] = element;
     size++;
   }
@@ -38,7 +37,6 @@ public class Queue <T>{
   public void resize() {
     if(size < Arr.length)
       return;
-
     T[] newArr = (T[]) new Object[size + 100];
     for(int i = 0; i < Arr.length; i++) {
       newArr[i] = Arr[i];
@@ -51,7 +49,7 @@ public class Queue <T>{
   public T remove() {
     if(isEmpty()) {
       System.out.println("Queue is Empty");
-      return (T)"{}";
+      return null;
     } 
     T temp = Arr[0];
     for(int i = 1; i < size; i++) {
@@ -65,7 +63,7 @@ public class Queue <T>{
   public T peek() {
     if(isEmpty()) {
       System.out.println("Queue is Empty");
-      return (T) "{}";
+      return null;
     }
     return Arr[0];
   }
