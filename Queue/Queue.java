@@ -1,15 +1,17 @@
 public class Queue <T>{
-  private T[] Arr;
+  private T Arr[];
   private int size;
 
   // The Default constructor that initialize the array to 100
   public Queue() {
     Arr = (T[]) new Object[100]; 
+    size = 0;
   }
 
   // The constructor that initialize the array to size "s"
   public Queue(int s) {
     Arr = (T[]) new Object[s]; 
+    size = 0;
   }
 
   // A method that return the size of the Queue
