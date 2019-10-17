@@ -17,7 +17,7 @@ public class Node<T> {
   }
 
   // Instatiate a node with a element and a nextNode
-  public Node(T element, Node nextNode) {
+  public Node(T element, Node<T> nextNode) {
     data = element;
     next = nextNode;
   }
@@ -27,7 +27,7 @@ public class Node<T> {
 		return data;
   }
   
-	public Node getNext() {
+	public Node<T> getNext() {
 		return next;
   }
   
@@ -35,7 +35,7 @@ public class Node<T> {
 		data = element;
   }
   
-	public void setNext(Node nextNode){
+	public void setNext(Node<T> nextNode){
 		next = nextNode;
 	}
 	public String toString(){
