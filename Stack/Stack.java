@@ -35,7 +35,6 @@ public class Stack <T> {
   public void push(T element) {
     if(Arr.length == size)
       resize();
-
     Arr[size] = element;
     size++;
   }
