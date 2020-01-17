@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Midterm",
+      "request": "launch",
+      "mainClass": "Midterm",
+      "projectName": "Stack_cffb14c9"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Tester",
       "request": "launch",
       "mainClass": "Tester"
